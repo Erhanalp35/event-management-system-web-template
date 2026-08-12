@@ -1,0 +1,1 @@
+(function(ns){'use strict';ns.escape=function(value){return String(value??'').replace(/[&<>'"]/g,function(char){return{'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[char]})};ns.normalizeSearch=function(value){return String(value??'').trim().replace(/\s+/g,' ').toLocaleLowerCase('en')};})(window.EMS=window.EMS||{});

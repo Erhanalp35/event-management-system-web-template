@@ -1,0 +1,2 @@
+@media(max-width:760px){.head-actions .btn{flex:1;white-space:nowrap}.toolbar>*{min-width:0}.modal-foot{position:sticky;bottom:0;background:var(--surface)}body{overflow-x:hidden}}
+@media(max-width:375px){.page-head h1{font-size:23px}.card{padding:14px}.modal-backdrop{padding:8px}}

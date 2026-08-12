@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="EventFlow event administration workspace">
+  <title>EventFlow — Event Management</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body><a class="skip-link" href="#app">Skip to main content</a>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="Primary navigation">
+      <div class="brand"><span class="brand-mark">E</span><div><strong>EventFlow</strong><small>Operations hub</small></div></div>
+      <nav id="nav"></nav>
+      <div class="sidebar-foot"><div class="org-avatar">NV</div><div><strong id="org-name">Northstar Events</strong><small>Workspace admin</small></div></div>
+    </aside>
+    <div class="scrim" id="scrim"></div>
+    <main>
+      <header class="topbar">
+        <button class="icon-btn mobile-only" id="menu-btn" aria-label="Open navigation">☰</button>
+        <div class="crumb"><span>Workspace</span><strong id="page-crumb">Dashboard</strong></div>
+        <div class="top-actions">
+          <label class="global-search"><span>⌕</span><input id="global-search" placeholder="Search this view…" aria-label="Search this view"></label>
+          <button class="icon-btn" id="theme-btn" aria-label="Toggle theme">◐</button>
+          <button class="btn primary" data-action="quick" data-type="event">＋ Create event</button>
+        </div>
+      </header>
+      <div id="app" tabindex="-1"></div>
+    </main>
+  </div>
+  <div id="modal-root"></div><div id="toast-root" aria-live="polite"></div>
+  <input type="file" id="import-file" accept="application/json" hidden>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+  <script src="assets/js/storage.js"></script>
+  <script src="assets/js/core/sanitizers.js"></script>
+  <script src="assets/js/core/validators.js"></script>
+  <script src="assets/js/core/calculations.js"></script>
+  <script src="assets/js/core/formatters.js"></script>
+  <script src="assets/js/ui/focus-manager.js"></script>
+  <script src="assets/js/data/import-export.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

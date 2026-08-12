@@ -1,0 +1,1 @@
+(function(ns){'use strict';ns.Format={currency(value,currency='USD'){return new Intl.NumberFormat('en-US',{style:'currency',currency,maximumFractionDigits:0}).format(Number(value)||0)},date(value){return value?new Intl.DateTimeFormat('en-US',{month:'short',day:'numeric',year:'numeric'}).format(new Date(`${value}T12:00:00`)):'—'}};})(window.EMS=window.EMS||{});

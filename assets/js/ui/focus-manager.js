@@ -1,0 +1,1 @@
+(function(ns){'use strict';let previous=null;ns.Focus={capture(){previous=document.activeElement},enter(container){const target=container?.querySelector('input,select,textarea,button,[tabindex]:not([tabindex="-1"])');target?.focus()},restore(){previous?.focus?.();previous=null}};})(window.EMS=window.EMS||{});
